@@ -1,0 +1,207 @@
+* {padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+scroll-behavior: smooth;}
+
+header {  background: linear-gradient(60deg,#141021, #221E33, #0F0C1C, #2B273F);
+  background-size: 300% 300%;
+  animation: color 8s ease-in-out infinite;
+  height: 80vh;
+padding-top: 100px;}
+
+@keyframes color{
+  0%{background-position: 0 50%;
+  }
+  50%{background-position: 100% 50%;
+  }
+  100%{background-position: 0 50%;
+  }
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  margin: 0px;
+  font-family: "karla", sans-serif;
+  color: #F4E7FF;
+  background-color: #221E33;
+}
+
+.container h2{font-family: "Righteous", sans-serif;
+            margin-bottom: 30px;
+            color: #D195FF;
+            margin-top: 40px;
+            }
+
+
+.container {margin: 100px 0px 100px 0px;}
+
+.uno {width: 90%;
+    margin: auto;}
+
+.scroll-indicator {
+     position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 0px;
+}
+
+.scroll-indicator a {
+padding: 12px;
+            position: relative;
+            display: block; }
+
+.scroll-indicator a::after{
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #F0DCFF;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.scroll-indicator a.active::after{
+  background-color: #4FF497;
+  transform: translate(-50%, 50%) scale(1.3);
+}
+
+section #uno{height: 70vh;}
+section #unou{height: 60vh;}
+section #unouns{height: 60vh;}
+section #dos{height: 90vh;}
+section #doss{height: 90vh;}
+section #tres{height: 80vh;}
+
+header {height: 80vh;}
+
+.navbar {background-color: #18132C;}
+
+.sobremii {height: 60vh;}
+
+.trabajos {margin-top: 50px; }
+
+   .typing-effect {
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: .15em solid green; 
+      animation: typing 6s steps(40, end), blink-caret .75s step-end infinite;
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: #4FF497 }
+    }
+
+       .arrow {
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-top: 20px solid transparent; 
+      border-bottom: 20px solid #fff; 
+      position: relative;
+      animation: bounce 1s infinite; 
+      transform: rotate(180deg); 
+      margin: 0 auto; 
+      cursor: pointer; 
+      margin-top: 30px;
+    }
+
+    @keyframes bounce {
+      0%, 100% { bottom: 0; }
+      50% { bottom: 20px; }
+    }
+
+    .flecha {text-align: center;
+      margin-top: 100px;}
+
+          .icon {
+      font-size: 30px;
+      margin: 0 10px; 
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .icon:hover {
+      transform: scale(1.2); 
+    }
+
+        .icon {
+      font-size: 38px;
+      margin: 0; 
+      transition: transform 0.3s ease-in-out; 
+    }
+
+    .circle {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 70px; 
+      height: 70px;
+      background-color: #3B3553; 
+      border-radius: 50%; 
+      margin: 0 10px; 
+    }
+
+    .circle:hover {
+      transform: scale(1.5); 
+    }
+
+    footer {text-align: center;
+      padding-top: 50px;
+      padding-bottom: 5px;
+      background-color: #18132C;}
+
+  .medios {margin-bottom: 80px;
+    margin-top: 40px;}
+
+h1 {font-family: "Righteous", sans-serif;
+              color: #C669FF;}
+
+  @keyframes show {
+    from {
+      opacity: 0;
+      scale: 25%;
+    }
+
+    to {opacity: 1;
+    scale:
+    100%;
+  }
+  }
+
+h4 {font-family: "Righteous", sans-serif;
+    }
+
+img {view-timeline-name:  --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+
+  animation-range: entry 25% cover 50%; 
+  animation-fill-mode: both;
+  }
+
+a {
+    color: #E5C4FF;
+    text-decoration: none;
+}
+
+a:hover {
+  color: #EED9FF;
+    text-decoration: underline;
+}
+
+hr {color: #50E0FF;}
+
+.headeer {margin-left:13px;
+  margin-right: 13px;}
